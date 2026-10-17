@@ -1,7 +1,7 @@
 export default function Categoriess() {
     return (
         <>
-            <div className="col justify-center items-center h-screen pt-30">
+            <div className="col justify-center h-screen items-center pt-30">
                 <div>
                     <h1 className="text-center text-6xl font-bold text-white">
                         Collection of UI Component
@@ -18,7 +18,7 @@ export default function Categoriess() {
                                 Section Component
                             </h1>
                             <p className="text-gray-300 text-md mt-3">
-                                Modern component
+                                Modern components
                             </p>
                             <div className="grid grid-cols-2 mt-7 space-x-3 space-y-3">
                                 <div className="bg-zinc-900 border border-zinc-800 rounded-xl  p-1">

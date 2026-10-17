@@ -11,7 +11,7 @@ export default function Hero() {
                         Javascript
                     </p>
                     <a
-                        href="#about"
+                        href="/element"
                         className="mx-auto hover:bg-slate-200 w-70 bg-white p-3 font-semibold rounded-lg font-semibold flex justify-center"
                     >
                         Get The UI Component

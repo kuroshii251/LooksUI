@@ -1,9 +1,9 @@
 export default function Footer() {
     return (
         <>
-            <div className="col  pt-200">
-                <div className="col bg-zinc-900 h-120 p-3 w-full">
-                    <div className="flex space-between space-x-10 p-7 py-20 justify-start items-center">
+            <div className="col lg:pt-20 pt-300">
+                <div className="col bg-zinc-900 lg:h-120 h-170 p-3 w-full">
+                    <div className="lg:flex block space-between space-x-10 p-7 py-20 justify-start items-center">
                         <div className="col-md-6 w-1/2">
                             <h1 className="text-white text-3xl font-semibold mb-3">
                                 LooksUI
@@ -22,31 +22,45 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col flex space-x-30 w-1/2 ml-auto">
+                        <div className="col flex space-x-30 lg:w-1/2 lg:mt-0 mt-10 ml-auto">
                             <div className="col-md-12">
                                 <ul className="col space-y-3">
+                                    <li>
+                                        <h1 className="text-white font-semibold">
+                                            Home
+                                        </h1>
+                                    </li>
                                     <li>
                                         <h1 className="text-white font-semibold">
                                             Menu
                                         </h1>
                                     </li>
                                     <li>
-                                        <a href="" className="text-white">
+                                        <a href="/blog" className="text-white">
                                             Blog
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" className="text-white">
+                                        <a
+                                            href="/element"
+                                            className="text-white"
+                                        >
                                             Elements
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" className="text-white">
+                                        <a
+                                            href="/contact"
+                                            className="text-white"
+                                        >
                                             Contact
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" className="text-white">
+                                        <a
+                                            href="/request-ui"
+                                            className="text-white"
+                                        >
                                             Request UI
                                         </a>
                                     </li>
@@ -63,7 +77,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href=""
+                                        href="/elements/section"
                                         className="text-white text-decoration-none"
                                     >
                                         Section
@@ -71,7 +85,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href=""
+                                        href="/elements/button"
                                         className="text-white text-decoration-none"
                                     >
                                         Button
@@ -79,7 +93,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href=""
+                                        href="/elements/card"
                                         className="text-white text-decoration-none"
                                     >
                                         Card

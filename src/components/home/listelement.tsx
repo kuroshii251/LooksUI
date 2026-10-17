@@ -15,35 +15,28 @@ export default function ListElement() {
   <style>{\`
     .successStatus {
       background-color: green;
+      padding: 10px  50px;
       border: 2px solid black;
       color:white;
-      font-size: 20px;
       font-weight: 600;
       border-radius: 8px;
-      padding: 15px 30px
+      width:100%;
+      display:flex;
+      flex-direction: row;
     }
 
-    .successStatus .text {
-    display: grid;
-
-    }
-
-    .successStatus .text h1 {
+    .successStatus h1 {
     color:white;
     }
     
   \`}</style>
   
 <div className="successStatus">
-<div className="text">
-
-
+<svg fill="#ffffff" style={{fontSize:"15px", marginRight:"10px", width: "10px"}} viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1743.858 267.012 710.747 1300.124 176.005 765.382 0 941.387l710.747 710.871 1209.24-1209.116z" fill-rule="evenodd"></path> </g></svg>
 <h1>Login Successfully</h1>
 
 </div>
 
-
-</div>  
 
 </>
 `}
@@ -83,19 +76,28 @@ margin-top: 20px;
 .twobutton .buttonn {
 background-color: black;
 padding:10px;
-width: auto;
+width: 100px;
 border-radius: 10px;
 color:white;
+font-weight:600;
 
 
 
 }
 
+
+
 .twobutton .buttonns{
 border: 2px solid black;
-width: auto;
+width: 100px;
 padding: 5px;
 border-radius: 10px;
+font-weight:600;
+
+.twobutton .buttonns:hover {
+background-color: 
+
+}
     }
 
     
@@ -195,20 +197,23 @@ Reject All
     .contentCard {
     background-color:white;
     border-radius:10px;
+        border-top-left:20px;
+
     }
 
     .contentCard .imagess {
-    margin:0;
-    right:0;
-    padding:0;
-    left:0;
+    border-top-left:20px;
 
     }
 
     
     .contentCard .imagess img {
     width:400px;
+        border-top-left:20px;
+        border-top-right:20px;
     height:200px;
+    
+    
 
     }
 
@@ -217,9 +222,22 @@ Reject All
     }
 
 
-      .contentCard .h1 {
-    font-size:10px;
-    font-weight:700;
+      .contentCard .text h1 {
+    font-size:15px;
+    font-weight:600;
+    }
+
+    .contentCard .text button {
+    background-color: black;
+    color: white;
+    }
+
+    .contentCard .text .buttonss1 {
+    backgound-color:black;
+    padding: 10px 20px;
+    border-radius:5px;
+    margin-top:30px;
+
     }
 
 
@@ -231,6 +249,10 @@ Reject All
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fRdoJJaUmtMA-hNWEzIPNwCOSx65ek1eLygoCTzYlg&s=10" />
 <div className="text">
 <h1>Card</h1>
+ <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+ <button className="buttonss1">
+ Read More
+ </button>
 </div>
 </div>
 
@@ -287,7 +309,22 @@ Reject All
     <a href="" className="">
     <i class="fa-solid fa-house-user"></i>
     </a>
+    
     </div>
+
+    <div>
+    <a href = "" className="">
+    <i class="fa-solid fa-comment"></i>
+    </a>
+    </div>
+
+     <div>
+    <a href = "" className="">
+    <i class="fa-solid fa-user"></i>
+    </a>
+    </div>
+
+
     
 
 
@@ -312,7 +349,7 @@ Reject All
       font-size: 10px;
       font-weight: 600;
      width:100%;
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 15px 40px;
       display:flex;
     }

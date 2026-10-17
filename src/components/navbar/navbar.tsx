@@ -16,7 +16,7 @@ export default function Navbar() {
                 </button>
             </div>
             <div
-                className={`${isOpen ? "hidden" : "hidden"} w-full lg:items-center lg:w-auto`}
+                className={`${isOpen ? "flex" : "hidden"} w-full lg:items-center lg:w-auto`}
             >
                 <div className="text-md lg:flex-grow space-x-5">
                     <a

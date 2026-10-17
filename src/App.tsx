@@ -16,13 +16,12 @@ function App() {
 
       <ListElement />
       <Categoriess />
-
-      <div className="col p-5 h-50">
-        <h1 className="text-white text-center font-semibold text-2xl">
-          Get Started
+      <div className="col h-100 bg-white">
+        <h1 className="text-white text-center font-bold h-screen justify-center flex items-center text-3xl">
+          Get Started Now
         </h1>
-        <a href=""></a>
       </div>
+
       <Footer />
     </>
   );
