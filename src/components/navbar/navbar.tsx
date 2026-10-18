@@ -22,10 +22,16 @@ export default function Navbar() {
                 >
                     <div className="text-md lg:flex-grow lg:flex lg:items-center lg:space-x-5">
                         <a
-                            href=""
+                            href="/blog"
                             className="block text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
                         >
                             Blog
+                        </a>
+                        <a
+                            href="/code"
+                            className="block text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
+                        >
+                            Code
                         </a>
                         <div className="col relative">
                             <button
@@ -36,27 +42,36 @@ export default function Navbar() {
                             </button>
 
                             <div
-                                className={`${isDropdown ? "block" : "hidden"} absolute bg-zinc-900 w-full overflow-hidden z-10`}
+                                className={`${isDropdown ? "block" : "hidden"} absolute bg-zinc-950 rounded-xl w-150 p-10 flex justify-start right-0 overflow-hidden z-10`}
                             >
-                                <ul>
-                                    <li>
-                                        <a href="">Button</a>
-                                    </li>
-                                    <li>
-                                        <a href="" className="text-white">
-                                            Button
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">Button</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Button</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Button</a>
-                                    </li>
-                                </ul>
+                                <div className=" h-50">
+                                    <ul className="space-y-5">
+                                        <li className="bg-zinc-900 hover:bg-black border border-white p-3 rounded-lg">
+                                            <a
+                                                href=""
+                                                className="font-semibold text-white"
+                                            >
+                                                Section Component
+                                            </a>
+                                        </li>
+                                        <li className=" rounded-lg hover:bg-black border border-white p-3 bg-zinc-900 ">
+                                            <a
+                                                href=""
+                                                className="text-white font-semibold"
+                                            >
+                                                Button
+                                            </a>
+                                        </li>
+                                        <li className="bg-zinc-900 hover:bg-black border border-white p-3 rounded-lg">
+                                            <a
+                                                href=""
+                                                className="font-semibold text-white"
+                                            >
+                                                Card
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 

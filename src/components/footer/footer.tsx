@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
         <>
-            <div className="col h-screen pt-50">
-                <div className="col bg-zinc-950 lg:h-120 h-170 p-3 w-full">
+            <div className="col pt-10">
+                <div className="col bg-zinc-950 lg:h-120 p-3 w-full">
                     <div className="lg:flex block space-between space-x-10 p-7 py-20 justify-start items-center">
                         <div className="col-md-6 w-1/2">
                             <h1 className="text-white text-3xl font-semibold mb-3">

@@ -6,12 +6,12 @@ export default function Blog1() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col justify-center py-20 items-center">
+            <div className="flex flex-col justify-center p-5 py-20 items-center">
                 <div className="col mb-7">
                     <div className="col flex justify-between pb-5">
                         <a
                             href="/blog"
-                            className="flex justify-center items-center space-x-3"
+                            className="flex justify-center items-center space-x-3 items-center"
                         >
                             <i className="fa-solid fa-arrow-left-long text-white"></i>
                             <h1 className="text-white">Back</h1>
@@ -32,7 +32,7 @@ export default function Blog1() {
                         <h1 className="text-white font-bold text-3xl py-7">
                             For Beginner
                         </h1>
-                        <ol className="list-decimal">
+                        <ol className="list-decimal lg:px-3 px-4">
                             <li className="text-white">Calculator</li>
                             <li className="text-white">Simple Landing Page</li>
                             <li className="text-white">
@@ -46,10 +46,10 @@ export default function Blog1() {
                     </div>
 
                     <div className="col py-10">
-                        <h1 className="text-white text-3xl font-bold">
+                        <h1 className="text-white text-3xl  font-bold">
                             For Intermediate
                         </h1>
-                        <ol className="py-7 list-decimal">
+                        <ol className="py-7 list-decimal lg:px-3 px-4">
                             <li className="text-white">Link Shortener</li>
                             <li className="text-white">Meme Generator</li>
                             <li className="text-white">
@@ -65,10 +65,10 @@ export default function Blog1() {
                     </div>
 
                     <div className="col py-10">
-                        <h1 className="text-white text-3xl font-bold">
+                        <h1 className="text-white text-3xl  font-bold">
                             For Advanced
                         </h1>
-                        <ol className="py-7 list-decimal">
+                        <ol className="py-7 list-decimal lg:px-3 px-4">
                             <li className="text-white">Dev Forum</li>
                             <li className="text-white">
                                 Prompt Generator Tool

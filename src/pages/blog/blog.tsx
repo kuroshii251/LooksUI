@@ -7,13 +7,12 @@ export default function Blog() {
         <>
             <Navbar />
             <div className="col h-screen pt-10">
-                <h1 className="text-white text-center text-6xl font-bold">
+                <h1 className="text-white text-center mb-10 text-6xl font-bold">
                     Blogs
                 </h1>
                 <ListBlog />
+                <Footer />
             </div>
-
-            <Footer />
         </>
     );
 }
