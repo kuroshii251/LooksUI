@@ -16,7 +16,7 @@ function App() {
 
       <ListElement />
       <Categoriess />
-      <div className="col h-100 bg-white">
+      <div className="col h-screen text-center bg-zinc-900">
         <h1 className="text-white text-center font-bold h-screen justify-center flex items-center text-3xl">
           Get Started Now
         </h1>
