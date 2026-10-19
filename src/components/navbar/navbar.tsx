@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../../assets/logo.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +8,7 @@ export default function Navbar() {
         <>
             <nav className="flex items-center justify-between flex-wrap p-7">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <h1 className="font-semibold text-2xl">LooksUI</h1>
+                    <img src={logo} width={100} height={100} alt="" />
                 </div>
                 <div className="block lg:hidden">
                     <button

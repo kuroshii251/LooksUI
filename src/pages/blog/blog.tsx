@@ -7,9 +7,11 @@ export default function Blog() {
         <>
             <Navbar />
             <div className="col h-screen pt-10">
-                <h1 className="text-white text-center mb-10 text-6xl font-bold">
+                <h1 className="text-white text-center mb-7 text-6xl font-bold">
                     Blogs
                 </h1>
+                <hr className="text-white w-30 mb-10 mx-auto" />
+
                 <ListBlog />
                 <Footer />
             </div>

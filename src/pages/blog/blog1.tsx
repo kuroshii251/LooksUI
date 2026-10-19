@@ -6,6 +6,7 @@ export default function Blog1() {
     return (
         <>
             <Navbar />
+            <h1 className="text-white">Halo</h1>
             <div className="flex flex-col justify-center p-5 py-20 items-center">
                 <div className="col mb-7">
                     <div className="col flex justify-between pb-5">

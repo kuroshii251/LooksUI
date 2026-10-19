@@ -1,3 +1,4 @@
+import logo from "../../assets/logo.png";
 export default function Footer() {
     return (
         <>
@@ -5,9 +6,7 @@ export default function Footer() {
                 <div className="col bg-zinc-950 lg:h-120 p-3 w-full">
                     <div className="lg:flex block space-between space-x-10 p-7 py-20 justify-start items-center">
                         <div className="col-md-6 w-1/2">
-                            <h1 className="text-white text-3xl font-semibold mb-3">
-                                LooksUI
-                            </h1>
+                            <img src={logo} height={100} width={100} />
                             <p className="text-white w-100">
                                 LooksUI is a website where users can search the
                                 best UI component for their website
