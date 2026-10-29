@@ -378,7 +378,7 @@ Reject All
                 </div>
                 <div className="bg-zinc-900 p-4 rounded-xl font-semibold w-100 mx-auto text-center">
                     <a
-                        href="/elements"
+                        href="/element"
                         className="text-white  text-center mx-auto"
                     >
                         Check Out More Components
