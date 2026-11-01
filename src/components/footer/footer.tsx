@@ -21,9 +21,9 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col flex space-x-30 lg:w-1/2 lg:mt-0 mt-10 ml-auto">
+                        <div className="col flex items-center justify-center align-items-center space-x-30 lg:w-1/2 lg:mt-0 mt-10 ml-auto">
                             <div className="col-md-12">
-                                <ul className="col space-y-3">
+                                <ul className="col space-y-3 ">
                                     <li>
                                         <h1 className="text-white font-semibold">
                                             Home
@@ -53,14 +53,6 @@ export default function Footer() {
                                             className="text-white"
                                         >
                                             Contact
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="/request-ui"
-                                            className="text-white"
-                                        >
-                                            Request UI
                                         </a>
                                     </li>
                                 </ul>
@@ -100,12 +92,6 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <hr className="text-white" />
-                    <div className="p-6 ">
-                        <p className="text-white font-semibold text-md ">
-                            Copyright @2026 by Kuro
-                        </p>
                     </div>
                 </div>
             </div>

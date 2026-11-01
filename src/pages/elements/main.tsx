@@ -1,120 +1,83 @@
 import { LivePreview, LiveProvider } from "react-live";
 import Navbar from "../../components/navbar/navbar";
-import SideBar from "../../components/sidebar/sidebar";
 import Footer from "../../components/footer/footer";
 
 export default function ElementsPage() {
   return (
     <>
       <Navbar />
-
       <div className="col flex h-screen">
-        <SideBar />
         <div className="col overflow-y-auto p-4 flex-1 ">
-          <h1 className="text-white font-semibold text-3xl">All</h1>
-          <div className="grid grid-cols-2 pt-5 space-x-5 space-y-10">
+          <h1 className="text-white text-center font-bold p-5 text-4xl">All </h1>
+          <div className="flex space-x-5 justify-center pt-10">
+            <a href="/element/" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">All</a>
+            <a href="/element/section" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Section</a>
+                <a href="/element/button" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Button</a>
+            <a href="/element/card" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Card</a>
+            <a href="/element/forms" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Forms</a>
+
+          </div>
+          <div className="grid grid-cols-3 pt-5 space-x-5 space-y-10">
             <a href="" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>
-  <style>{\`
-    .successStatus {
-      background-color: green;
-      padding: 10px  5  0px;
-      border: 2px solid black;
-      color:white;
-      font-weight: 600;
-      border-radius: 8px;
-      width:100%;
-      display:flex;
-      flex-direction: row;
-    }
+      <style>{\`
+        .navigation-dynamic {
+          background-color: white;
+          border-radius:20px;
+          justify-content:space-around;
+          margin: 0 auto;
+          display:flex;
+          padding:18px;
+        width:300px;
+        flex-direction: row;
+          bottom:20px;
+          right:0;
+          left:0;
+        }
+          
 
-    .successStatus h1 {
-    color:white;
-    }
-    
-  \`}</style>
-  
-<div className="successStatus">
-<svg fill="#ffffff" style={{fontSize:"15px", marginRight:"10px", width: "10px"}} viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1743.858 267.012 710.747 1300.124 176.005 765.382 0 941.387l710.747 710.871 1209.24-1209.116z" fill-rule="evenodd"></path> </g></svg>
-<h1>Login Successfully</h1>
+        .navigation-dynamic ul {
+        list-style:none;
+        flex-direction:row;
+        display:flex;
+        margin:0;
+        padding:0;
+        gap:10px;
+        }
 
-</div>
+        .navigation-dynamic ul li {
+        text-decoration:none;
 
+        }
 
-</>
-`}
-              >
-                <div className="flex items-center justify-center h-100 w-full">
-                  <LivePreview />
-                </div>
-              </LiveProvider>
-            </a>
-           
-            <a href="" className="col bg-zinc-950  rounded-xl p-3 w-100">
-              <LiveProvider
-                code={`
-                                <>
-  <style>{\`
-
-    .navigation-dynamic {
-      background-color: white;
-      border-radius:20px;
-      justify-content:space-around;
-      margin: 0 auto;
-      display:flex;
-      padding:18px;
-    width:300px;
-    flex-direction: row;
-      bottom:20px;
-      right:0;
-      left:0;
-
-
-    }
-
-     .navigation-dynamic ul {
-     list-style:none;
-     flex-direction:row;
-     display:flex;
-     margin:0;
-     padding:0;
-     gap:10px;
-     }
-
-     .navigation-dynamic ul li {
-     text-decoration:none;
-
-     }
-
-
-  \`}</style>
-  
-  <div className="navigation-dynamic">
-<div>
-    <a href="" className="">
-    <i class="fa-solid fa-house-user"></i>
-    </a>
-    
-    </div>
-
+      \`}</style>
+      
+      <div className="navigation-dynamic">
     <div>
-    <a href = "" className="">
-    <i class="fa-solid fa-comment"></i>
-    </a>
-    </div>
+        <a href="" className="">
+        <i class="fa-solid fa-house-user"></i>
+        </a>
+        
+        </div>
 
-     <div>
-    <a href = "" className="">
-    <i class="fa-solid fa-user"></i>
-    </a>
-    </div>
+        <div>
+        <a href = "" className="">
+        <i class="fa-solid fa-comment"></i>
+        </a>
+        </div>
 
-  </div>
+        <div>
+        <a href = "" className="">
+        <i class="fa-solid fa-user"></i>
+        </a>
+        </div>
 
-</>
-`}
+      </div>
+
+    </>
+    `}
               >
                 <div className="flex items-center justify-center h-100 w-full">
                   <LivePreview />

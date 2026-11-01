@@ -1,12 +1,11 @@
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
 import Navbar from "../../../components/navbar/navbar";
-import SideBar from "../../../components/sidebar/sidebar";
 import { useState } from "react";
 import Footer from "../../../components/footer/footer";
 
 export default function Card1() {
     const [tab, setTab] = useState(0);
-    const [htmlCode] = useState(`
+    const htmlCode = `
         <div class="cookies1">
 
 <h1> We Use Cookies</h1>
@@ -24,9 +23,9 @@ Reject All
 </div>
 
 </div>
- `);
+ `;
 
-    const [cssCode] = useState(`
+    const cssCode = `
           .cookies1 {
       background-color: white;
       border-radius: 8px;
@@ -77,7 +76,7 @@ background-color: white;
 
     }
 
- `);
+ `;
 
     const handleTab = (id: any) => {
         setTab(id);
@@ -95,7 +94,6 @@ background-color: white;
         <>
             <Navbar />
             <div className="col flex h-screen">
-                <SideBar />
                 <div className="col overflow-y-auto p-4 flex-1 ">
 
                     <div className="flex">
@@ -120,8 +118,8 @@ ${htmlCode}
                             <LiveError />
                         </div>
                         <LiveProvider />
-                          <div className="p-2 bg-black w-120">
-                            <div className="col space-x-3 w-110 flex bg-zinc-950 p-3 left-0">
+                          <div className="p-2 bg-black">
+                            <div className="col space-x-3 flex bg-zinc-950 p-3 left-0">
                                 <button
                                     className="text-white font-semibold hover:bg-black p-1 w-30 rounded-lg"
                                     onClick={() => handleTab(0)}

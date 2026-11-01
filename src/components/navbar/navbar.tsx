@@ -7,7 +7,9 @@ export default function Navbar() {
         <>
             <nav className="flex items-center justify-between h-30 flex-wrap p-7">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <img src={logo} width={100} height={100} alt="" />
+                    <a href="/">
+                    <img src={logo} width={80} height={80} alt="" />
+                    </a>
                 </div>
                 <div className="block lg:hidden">
                     <button
@@ -73,17 +75,10 @@ export default function Navbar() {
                                                 href=""
                                                 className="font-semibold text-white"
                                             >
-                                                Section Component
+                                               Forms
                                             </a>
                                         </li>
-                                         <li className="bg-zinc-800 hover:bg-zinc-900 p-3 rounded-lg">
-                                            <a
-                                                href=""
-                                                className="font-semibold text-white"
-                                            >
-                                                Section Component
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
