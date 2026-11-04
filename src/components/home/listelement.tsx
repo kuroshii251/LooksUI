@@ -5,7 +5,7 @@ export default function ListElement() {
         <>
             <div className="col  mb-20 ">
                 <h1 className="text-white text-5xl mb-7 font-semibold text-center">
-                    Latest Elements
+                    Components
                 </h1>
                 <div className="grid lg:grid-cols-3  grid-cols-1 justify-center lg:space-x-5 space-y-7 p-5 items-center place-content-center">
                     <div className="bg-zinc-900 p-3">
@@ -378,7 +378,7 @@ Reject All
                 </div>
                 <div className="bg-zinc-900 p-4 rounded-xl font-semibold w-100 mx-auto text-center">
                     <a
-                        href="/element"
+                        href="/component"
                         className="text-white  text-center mx-auto"
                     >
                         Check Out More Components

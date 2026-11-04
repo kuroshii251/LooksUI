@@ -1,7 +1,7 @@
 export default function Hero() {
     return (
         <>
-            <div className="col h-screen background-hero">
+            <div className="col  flex justify-center h-screen">
                 <div className="mx-auto justify-center w-fit py-20 space-y-10 items-center">
                     <h1 className="text-white font-extrabold lg:text-7xl text-5xl text-center">
                         A Collection <br /> of UI Components
@@ -13,8 +13,7 @@ export default function Hero() {
                     <a
                         href="/element"
                         className="mx-auto hover:bg-slate-200 w-70 bg-white p-3 font-semibold rounded-lg font-semibold flex justify-center"
-                    >
-                        Get The UI Component
+                    > Get The UI Component
                     </a>
                 </div>
             </div>

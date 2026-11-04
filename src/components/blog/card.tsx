@@ -1,11 +1,13 @@
 import picture1 from "../../assets/picture1.png";
+import footerphoto from "../../assets/footerphoto.png"
+
 
 export default function ListBlog() {
     return (
         <>
             <div className="col ">
                 <div className="grid lg:grid-cols-3 grid-cols-1 lg:space-y-8 space-y-7 space-x-5 p-5">
-                    <a href="/blog/1" className="bg-zinc-900 ">
+                    <a href="/blog/1" className="bg-zinc-900 h-120 ">
                         <div className="">
                             <img
                                 src={picture1}
@@ -16,18 +18,18 @@ export default function ListBlog() {
                         <div className="pt-5 p-5">
                             <div className="grid grid-cols-2 w-full">
                                 <div className="col w-1/2 items-center">
-                                    <p className="text-white w-200">
+                                    <p className="text-white w-200 font-semibold">
                                         Created by Admin
                                     </p>
                                 </div>
                                 <div className="col flex items-center justify-end">
-                                    <p className="text-white ">10/17/2026</p>
+                                    <p className="text-white  font-semibold">10/17/2026</p>
                                 </div>
                             </div>
                             <div className=" py-5">
                                 <div className="">
                                     <h1 className="text-white text-xl w-100 font-semibold">
-                                        History of User Interface (UI)
+30 Project Ideas for Your Portfolio
                                     </h1>
                                 </div>
                                 <p className="text-white">
@@ -38,10 +40,10 @@ export default function ListBlog() {
                         </div>
                     </a>
 
-                    <a href="/blog/2" className="bg-zinc-900 ">
+                    <a href="/blog/2" className="bg-zinc-900 h-120 ">
                         <div className="">
                             <img
-                                src={picture1}
+                                src={footerphoto}
                                 alt=""
                                 className="rounded-top-xl h-70 w-full object-cover"
                             />
@@ -49,11 +51,11 @@ export default function ListBlog() {
                         <div className="pt-5 p-5">
                             <div className="grid grid-cols-2 w-full">
                                 <div className="col w-1/2 items-center">
-                                    <p className="text-white w-200">
+                                    <p className="text-white w-200 font-semibold">
                                         Created by Admin
                                     </p>
                                 </div>
-                                <div className="col flex items-center justify-end">
+                                <div className="col flex items-center font-semibold justify-end">
                                     <p className="text-white ">12/4/2026</p>
                                 </div>
                             </div>

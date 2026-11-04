@@ -16,6 +16,15 @@ import Card2 from "./pages/elements/card/card2.tsx";
 import Card3 from "./pages/elements/card/card3.tsx";
 import SectionList from "./pages/elements/section/main.tsx";
 
+import Button3 from "./pages/elements/button/button3.tsx";
+import Button2 from "./pages/elements/button/button2.tsx";
+import Button1 from "./pages/elements/button/button1.tsx";
+import ButtonList from "./pages/elements/button/main.tsx";
+import FormList from "./pages/forms/main.tsx";
+import Form1 from "./pages/forms/form1.tsx";
+import Form2 from "./pages/forms/form2.tsx";
+import Form3 from "./pages/forms/form3.tsx";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
@@ -24,15 +33,26 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/1" element={<Blog1 />} />
         <Route path="/blog/2" element={<Blog2 />} />
-        <Route path="/element" element={<ElementsPage />} />
-        <Route path="/element/card" element={<CardList/>}/>
-        <Route path="/element/card/1" element={<Card1 />} />
-        <Route path="/element/card/2" element={<Card2 />} />
-        <Route path="/element/card/3" element={<Card3 />} />
-        <Route path="/element/section" element={<SectionList/>}/>
-        <Route path="/element/section/1" element={<Section1/>}/>
-        <Route path="/element/section/2" element={<Section2/>}/>
-        <Route path="/element/section/3" element={<Section3/>}/>
+        <Route path="/component" element={<ElementsPage />} />
+        <Route path="/component/card" element={<CardList/>}/>
+        <Route path="/component/card/1" element={<Card1 />} />
+        <Route path="/component/card/2" element={<Card2 />} />
+        <Route path="/component/card/3" element={<Card3 />} />
+        <Route path="/component/section" element={<SectionList/>}/>
+        <Route path="/component/section/1" element={<Section1/>}/>
+        <Route path="/component/section/2" element={<Section2/>}/>
+        <Route path="/component/section/3" element={<Section3/>}/>
+        <Route path="/component/forms" element={<FormList/>}/>
+        <Route path="/component/forms/1" element={<Form1/>}/>
+        <Route path="/component/forms/2" element={<Form2/>}/>
+        <Route path="/component/forms/3" element={<Form3/>}/>
+        <Route path="/component/button" element={<ButtonList/>}/>
+        <Route path="/component/button/1" element={<Button1/>}/>
+        <Route path="/component/button/2" element={<Button2/>}/>
+        <Route path="/component/button/3" element={<Button3/>}/>
+
+
+
 
       </Routes>
     </BrowserRouter>

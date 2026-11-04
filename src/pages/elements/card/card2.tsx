@@ -9,10 +9,12 @@ export default function Card2() {
 
    <div class="bg-container">
 
-    <div className="background-code">
- <span className="circle1"/>
- <span className="circle2"/>
- <span className="circle3"/>
+    <div class="background-code">
+ <span class="circle1"/>
+  <span class="circle2"/>
+ <span class="circle3"/>
+
+
  </div> 
    </div>  
 
@@ -54,7 +56,7 @@ export default function Card2() {
      }
  
      .circle3 {
-         background-color:green;
+    background-color:green;
  
      width:10px;
      height:10px;
@@ -80,35 +82,35 @@ export default function Card2() {
     return (
         <>
             <Navbar />
-            <div className="col flex h-screen">
+       <div className="col flex h-screen">
                 <div className="col overflow-y-auto p-4 flex-1 ">
 
-                    <div className="flex">
+                    <div className="col block space-y-5">
                       
 
-                        <div className="col bg-zinc-800 p-5 h-100 rounded-xl">
-                            <LiveProvider
+                        <div className="col bg-zinc-800 p-5 h-auto rounded-xl">
+                            <LiveProvider scope={{cssCode, htmlCode}}
                                 code={`
                                 <>
-  <style>{\`
-    ${cssCode} \`}</style>
-  
-${htmlCode}
+  <style>{cssCode}</style>
+<div dangerouslySetInnerHTML={{ __html: htmlCode}}/>  
+
 
 </>
 `}
                             >
-                                <div className="flex items-center justify-center h-100 w-full">
+                                <div className="flex items-center justify-center h-auto w-full">
                                     <LivePreview />
                                 </div>
                             </LiveProvider>
                             <LiveError />
                         </div>
                         <LiveProvider />
-                          <div className="p-2 bg-black">
-                            <div className="col space-x-3 flex bg-zinc-950 p-3 left-0">
+                          <div className="p-2 bg-black w-full">
+                            
+                            <div className="col space-x-3 w-full flex bg-zinc-950 p-3 left-0">
                                 <button
-                                    className="text-white font-semibold hover:bg-black p-1 w-30 rounded-lg"
+                                    className="text-white font-semibold hover:bg-black p-1 w-100 rounded-lg"
                                     onClick={() => handleTab(0)}
                                 >
                                     <i
@@ -118,7 +120,7 @@ ${htmlCode}
                                     HTML
                                 </button>
                                 <button
-                                    className="p-1 font-semibold text-white w-30 rounded-lg hover:bg-black"
+                                    className="p-1 font-semibold text-white w-100 rounded-lg hover:bg-black"
                                     onClick={() => handleTab(1)}
                                 >
                                     <i
@@ -127,10 +129,24 @@ ${htmlCode}
                                     ></i>
                                     CSS
                                 </button>
-                            </div>
-                            <div className="">
-                                <div className={tab === 0 ? "block" : "hidden"}>
-                                    <div className=" flex justify-center items-center absolute">
+
+                                <div className="flex w-2/1 justify-end items-end ">
+                     <div className={tab === 0 ? "block": "hidden"}>
+
+                                        <button
+                                            onClick={handleCopyCss}
+                                            className="cursor-pointer p-3"
+                                        >
+                                            
+                                            <i
+                                                className="fa-regular fa-clipboard"
+                                                style={{ color: "white" }}
+                                            ></i>
+                                        </button>
+                                        </div>
+
+                                         <div className={tab === 1 ? "block": "hidden"}>
+
                                         <button
                                             onClick={handleCopyHtml}
                                             className="cursor-pointer p-3"
@@ -140,27 +156,26 @@ ${htmlCode}
                                                 style={{ color: "white" }}
                                             ></i>
                                         </button>
-                                    </div>
+                                        </div>
+
+                                        
+                                        
+                                        </div>
+                            </div>
+                            <div className="">
+                                <div className={tab === 0 ? "block" : "hidden"}>
+                                    
                                     <div className="h-83 overflow-y-auto">
                                         <LiveEditor
                                             language="html"
                                             code={htmlCode}
                                         ></LiveEditor>
                                     </div>
+                                    
                                 </div>
 
                                  <div className={tab === 1 ? "block" : "hidden"}>
-                                    <div className=" flex justify-center items-center absolute">
-                                        <button
-                                            onClick={handleCopyCss}
-                                            className="cursor-pointer p-3"
-                                        >
-                                            <i
-                                                className="fa-regular fa-clipboard"
-                                                style={{ color: "white" }}
-                                            ></i>
-                                        </button>
-                                    </div>
+                                    
                                     <div className="h-83 overflow-y-auto">
                                         <LiveEditor
                                             language="css"

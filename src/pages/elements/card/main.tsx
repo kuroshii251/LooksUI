@@ -9,8 +9,16 @@ export default function CardList() {
       <div className="col flex h-screen">
         <div className="col overflow-y-auto p-4 flex-1 ">
           <h1 className="text-white text-center font-bold p-5 text-4xl">Card</h1>
+             <div className="flex space-x-5 justify-center pt-10">
+            <a href="/component/" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">All</a>
+            <a href="/component/section" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Section</a>
+                <a href="/component/button" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Button</a>
+            <a href="/component/card" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Card</a>
+            <a href="/component/forms" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Forms</a>
+
+          </div>
           <div className="grid grid-cols-3 pt-5 space-x-5 space-y-10">
-              <a href="/element/card/1" className="col bg-zinc-950  rounded-xl p-3 w-100">
+              <a href="/component/card/1" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>
@@ -96,7 +104,7 @@ Reject All
               </LiveProvider>
             </a>
 
-            <a href="/element/card/2" className="col bg-zinc-950  rounded-xl p-3 w-100">
+            <a href="/component/card/2" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>
@@ -159,7 +167,7 @@ Reject All
               </LiveProvider>
             </a>
           
-            <a href="/element/card/3" className="col bg-zinc-950  rounded-xl p-3 w-100">
+            <a href="/component/card/3" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>

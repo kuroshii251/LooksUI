@@ -23,23 +23,23 @@ export default function Navbar() {
                     className={`${isOpen ? "block" : "hidden"} w-full lg:flex lg:items-center lg:w-auto`}
                 >
                     <div className="text-md lg:flex-grow lg:flex lg:items-center lg:space-x-5">
+                          <a
+                            href="/"
+                            className="block text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
+                        >
+                            Home
+                        </a>
                         <a
                             href="/blog"
                             className="block text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
                         >
                             Blog
                         </a>
-                        <a
-                            href="/code"
-                            className="block text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
-                        >
-                            Code
-                        </a>
                         <div className="col relative group">
                             <a
                                 className="flex justify-center items-center text-white hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start rounded-xl lg:mt-0 text-black "
                             >
-                                Element
+                                Component
                                 <i className="fa-solid ml-1 fa-caret-down text-white"></i>
                             </a>
 

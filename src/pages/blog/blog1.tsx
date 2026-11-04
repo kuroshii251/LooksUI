@@ -6,21 +6,9 @@ export default function Blog1() {
     return (
         <>
             <Navbar />
-               <h1 className="text-white">Halo</h1>
             <div className="flex flex-col justify-center p-5 py-20 items-center">
                 <div className="col mb-7">
-                    <div className="col flex justify-between pb-5">
-                        <a
-                            href="/blog"
-                            className="flex justify-center items-center space-x-3 items-center"
-                        >
-                            <i className="fa-solid fa-arrow-left-long text-white"></i>
-                            <h1 className="text-white">Back</h1>
-                        </a>
-                        <div className="flex justify-end items-end">
-                            <h1 className="text-white">Aug 18 2026</h1>
-                        </div>
-                    </div>
+                
                     <img src={oldpc} className="w-full" />
                     <h1 className="text-white font-bold py-10 text-3xl">
                         30 Project Ideas for Your Portfolio
