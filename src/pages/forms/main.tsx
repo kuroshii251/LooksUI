@@ -18,7 +18,7 @@ export default function FormList() {
 
           </div>
           <div className="grid lg:grid-cols-3 grid-cols-1 pt-5 space-x-5 space-y-10">
-              <a href="/component/form/1" className="col bg-zinc-950  rounded-xl p-3 w-100">
+              <a href="/component/forms/1" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>
@@ -189,7 +189,7 @@ export default function FormList() {
               </LiveProvider>
             </a>
 
-            <a href="/component/form/2" className="col bg-zinc-950  rounded-xl p-3 w-100">
+            <a href="/component/forms/2" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>
@@ -285,7 +285,7 @@ export default function FormList() {
               </LiveProvider>
             </a>
           
-            <a href="/component/form/3" className="col bg-zinc-950  h-106 rounded-xl p-3 w-100">
+            <a href="/component/forms/3" className="col bg-zinc-950  h-106 rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>

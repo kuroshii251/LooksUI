@@ -55,7 +55,7 @@ export default function Navbar() {
                                                 href="/component/section"
                                                 className=" text-white  s"
                                             >
-                                                Section Component
+                                                Section
                                             </a>
                                         </li>
                                         <li className="lg:bg-zinc-800 lg:hover:bg-zinc-900 p-3 rounded-lg">
