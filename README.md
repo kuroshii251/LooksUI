@@ -58,5 +58,5 @@ Open the clone project and running this
 npm run dev
 ```
 
-Or if you would like to see the demo, you can check on this website:
+Or if you would like to see the website demo, you can check on this website:
 https://looks-ui.vercel.app/
