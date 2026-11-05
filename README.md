@@ -38,7 +38,7 @@ LooksUI
 <img width="959" height="449" alt="Screenshot 2026-11-05 235123" src="https://github.com/user-attachments/assets/364395bf-2ac1-4121-9d03-a216e7775625" />
 <img width="959" height="443" alt="Screenshot 2026-11-05 235140" src="https://github.com/user-attachments/assets/621fd0c1-7c8e-4ffa-bec3-66a3a23d3cdb" />
 <img width="959" height="425" alt="Screenshot 2026-11-05 235154" src="https://github.com/user-attachments/assets/be191be7-2d9e-4e25-a3af-646e57204f07" />
-<img width="1903" height="880" alt="image" src="https://github.com/user-attachments/assets/e55d9ffe-6a17-4ffa-a657-61e2b047daaa" />
+<img width="959" height="449" alt="image" src="https://github.com/user-attachments/assets/e55d9ffe-6a17-4ffa-a657-61e2b047daaa" />
 <img width="959" height="439" alt="Screenshot 2026-11-05 235203" src="https://github.com/user-attachments/assets/5ce43e6a-4262-4a71-8f89-1864f3691c01" />
 <img width="959" height="443" alt="Screenshot 2026-11-05 235213" src="https://github.com/user-attachments/assets/73d338f2-e9e3-49c2-8962-efbeab653c1b" />
 
