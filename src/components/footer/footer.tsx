@@ -12,7 +12,7 @@ export default function Footer() {
 
                             </div>
                             <p className="text-white text-lg w-100">
-                               LooksUI is a website that provides UI assets/components for your website. It's ready to use elements such as buttons, form, section, and card 
+                               LooksUI is a website that provides UI assets/components for your website. It's ready to use components such as buttons, form, section, and card 
                             </p>
                        
                         </div>

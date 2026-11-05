@@ -8,7 +8,7 @@ export default function ContactPage(){
         <div className="flex justify-center items-center p-5 min-h-screen">
             <div className="    ">
                 <h1 className="text-white font-bold text-5xl text-center mb-10">Contact Us  </h1>
-                <p className="text-white text-center text-lg w-120 mb-6">Contact us if you wan't ask anything about LooksUI, or request the UI Components</p>
+                <p className="text-white text-center text-lg w-120 mb-6">Contact us if you wanna ask anything about LooksUI, or request the UI Components</p>
                 <div className="flex flex-1 justify-center">
      <form action="https://formspree.io/f/xyeeoorz" method="POST">
                     <div className="col mt-4">

@@ -4,7 +4,7 @@ export default function ListElement() {
     return (
         <>
             <div className="col  mb-20 ">
-                <h1 className="text-white text-5xl mb-7 font-semibold text-center">
+                <h1 className="text-white text-5xl mb-7 font-bold text-center">
                     Components
                 </h1>
                 <div className="grid lg:grid-cols-3  grid-cols-1 justify-center lg:space-x-5 space-y-7 p-5 items-center place-content-center">

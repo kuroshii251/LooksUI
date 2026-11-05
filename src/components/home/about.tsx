@@ -10,7 +10,7 @@ export default function About() {
                         About LooksUI
                     </h1>
                     <p className="text-white lg:text-start text-center text-xl lg:w-150 w-100  mx-auto mt-5">
-LooksUI is a website that provides UI assets/components for your website. It's ready to use elements such as buttons, form, section, and card                    </p>
+LooksUI is a website that provides UI assets/components for your website. It's ready to use components such as buttons, form, section, and card                    </p>
                 </div>
             </div>
         </>
