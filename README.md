@@ -7,7 +7,7 @@
 
 LooksUI is a website that provides UI assets/components for your website. It's ready to use components. I'm create this website using react.js and I'm focus developed the UI Components such as buttons, form, card, and section.
 
-# Project Stucture
+# Project Structure
 ```
 LooksUI
 ├── src
