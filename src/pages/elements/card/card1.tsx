@@ -86,10 +86,12 @@ background-color: white;
 
     const handleCopyHtml = () => {
         navigator.clipboard.writeText(htmlCode);
+        alert("Copied");
     };
 
     const handleCopyCss = () => {
         navigator.clipboard.writeText(cssCode);
+        alert("Copied");
     };
 
     return (
@@ -147,7 +149,7 @@ background-color: white;
                      <div className={tab === 0 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyCss}
+                                            onClick={handleCopyHtml}
                                             className="cursor-pointer p-3"
                                         >
                                             
@@ -161,7 +163,7 @@ background-color: white;
                                          <div className={tab === 1 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyHtml}
+                                            onClick={handleCopyCss}
                                             className="cursor-pointer p-3"
                                         >
                                             <i

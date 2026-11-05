@@ -41,10 +41,12 @@ export default function Button1() {
 
     const handleCopyHtml = () => {
         navigator.clipboard.writeText(htmlCode);
+        alert("Copied");
     };
 
     const handleCopyCss = () => {
         navigator.clipboard.writeText(cssCode);
+        alert("Copied");
     };
 
     return (

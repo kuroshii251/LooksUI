@@ -5,92 +5,65 @@ import Footer from "../../../components/footer/footer";
 
 export default function Section3() {
     const [tab, setTab] = useState(0);
-      const htmlCode = `
-       <div class="hero">
-      <h1>Building Your Personal Branding With Test</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-      <div class="textDuo">
-        <a href="#" class="getstarted">Get Started</Get Started>
-        <a href="#" class="explores">Explores</Get Started>
+    const htmlCode = `
+    
+  <div className="navigation-dynamic">
+<div>
+    <a href="" class="">
+    <i class="fa-solid fa-house-user"></i>
+    </a>
+    
+    </div>
 
-      </div>
-     </div>
- 
- `;
+    <div>
+    <a href = "" className="">
+    <i class="fa-solid fa-comment"></i>
+    </a>
+    </div>
 
+     <div>
+    <a href = "" className="">
+    <i class="fa-solid fa-user"></i>
+    </a>
+    </div>
+  </div>
+  
+ `
     
     const cssCode = `
-
-    .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-}
-
-.hero h1  {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 500px;
-  font-size:40px;
-  text-align: center;
-
-}
-
-.hero p {
-  text-align: center;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: grey;
-}
+    
+        .navigation-dynamic {
+      background-color: white;
+      border-radius:20px;
+      justify-content:space-around;
+      margin: 0 auto;
+      display:flex;
+      padding:18px;
+    width:300px;
+    flex-direction: row;
+      bottom:20px;
+      right:0;
+      left:0;
 
 
-.hero .textDuo {
-  display:flex;
-  gap: 20px;
-  margin-top:10px;
-}
+    }
 
-.hero .textDuo .getstarted {
-  background-color: rgb(45, 45, 45);
-  color: white;
-  border-radius:10px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 25px 40px;
+     .navigation-dynamic ul {
+     list-style:none;
+     flex-direction:row;
+     display:flex;
+     margin:0;
+     padding:0;
+     gap:10px;
+     }
 
-}
+     .navigation-dynamic ul li {
+     text-decoration:none;
 
-.hero .textDuo .getstarted:hover {
-    background-color: white;
-     border: 1px solid black;
-  border-radius:10px;
-  color: black;
-
-}
+     }
 
 
-
-
-.hero .textDuo .explores {
-  border: 1px solid black;
-  border-radius:10px;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  padding: 25px 40px;
-
-}
-
-
-.hero .textDuo .explores:hover {
-    background-color: rgb(31, 31, 31);
-      color: white;
-
-
-}
-  
- `;
+  `
 
 
     const handleTab = (id: any) => {
@@ -99,10 +72,12 @@ export default function Section3() {
 
     const handleCopyHtml = () => {
         navigator.clipboard.writeText(htmlCode);
+        alert("Copied");
     };
 
     const handleCopyCss = () => {
         navigator.clipboard.writeText(cssCode);
+        alert("Copied");
     };
 
 
@@ -164,7 +139,7 @@ ${htmlCode}
                      <div className={tab === 0 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyCss}
+                                            onClick={handleCopyHtml}
                                             className="cursor-pointer p-3"
                                         >
                                             
@@ -178,7 +153,7 @@ ${htmlCode}
                                          <div className={tab === 1 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyHtml}
+                                            onClick={handleCopyCss}
                                             className="cursor-pointer p-3"
                                         >
                                             <i

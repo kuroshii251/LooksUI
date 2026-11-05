@@ -66,8 +66,7 @@ export default function ListBlog() {
                                 </h1>
                             </div>
                             <p className="text-white">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.
+                                 Here's the instructions to make simple footer
                             </p>
                         </div>
                     </a>

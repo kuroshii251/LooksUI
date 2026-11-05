@@ -99,10 +99,12 @@ export default function Section2() {
 
     const handleCopyHtml = () => {
         navigator.clipboard.writeText(htmlCode);
+        alert("Copied");
     };
 
     const handleCopyCss = () => {
         navigator.clipboard.writeText(cssCode);
+        alert("Copied");
     };
 
 
@@ -164,7 +166,7 @@ ${htmlCode}
                      <div className={tab === 0 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyCss}
+                                            onClick={handleCopyHtml}
                                             className="cursor-pointer p-3"
                                         >
                                             
@@ -178,7 +180,7 @@ ${htmlCode}
                                          <div className={tab === 1 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyHtml}
+                                            onClick={handleCopyCss}
                                             className="cursor-pointer p-3"
                                         >
                                             <i
@@ -212,13 +214,6 @@ ${htmlCode}
                                         ></LiveEditor>
                                     </div>
                                 </div>
-
-                                  
-
-                                
-
-
-
                             </div>
                         </div>
                     </div>

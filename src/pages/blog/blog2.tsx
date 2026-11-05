@@ -1,30 +1,36 @@
 import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar/navbar";
-import oldpc from "../../assets/pc.png";
+import footerPhoto from "../../assets/footerphoto.png";
 import { LiveEditor, LivePreview, LiveProvider } from "react-live";
 export default function Blog2() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col justify-center py-20 items-center">
+            <div className="flex flex-col justify-center py-20 p-10 items-center">
                 <div className="col mb-7">
                
-                    <img src={oldpc} className="w-full" />
-                    <h1 className="text-white font-bold py-10 text-3xl">
+                    <img src={footerPhoto} className="w-full " />
+                    <h1 className="text-white font-bold py-5 text-3xl">
                         How to make simple footer
                     </h1>
-                    <p className="text-white text-lg py-1 w-120">
+                    <p className="text-white text-lg w-120">
                         Here's the instructions to make simple footer
                     </p>
                     <div className="w-full">
-                        <div className="w-200">
+                 <h1 className="text-white mb-5 mt-10">index.html</h1>
+
+                        <div className="lg:w-full w-120" >
                             <LiveProvider
                                 code={` <!DOCTYPE html>
 <html>
   <head>
     <title>Hello, World!</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" 
+    integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv
+    /1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
      <div className="footer">
@@ -90,52 +96,55 @@ export default function Blog2() {
                     </div>
                     <div className="py-10">
                         <h1 className="text-white mb-5">style.css</h1>
-                        <LiveProvider
+                        <div className="lg:w-full w-120" >
+                                <LiveProvider
                             code={`.footer {
-  background-color: black;
-  padding: 40px 30px;
-}
+                        background-color: black;
+                        padding: 40px 30px;
+                        }
 
-.footer .listItem {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin-bottom: 100px;
-}
+                        .footer .listItem {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        margin-bottom: 100px;
+                        }
 
-.footer .listItem h1 {
-  color: white;
-}
+                        .footer .listItem h1 {
+                        color: white;
+                        }
 
-.footer .listItem a {
-  color: white;
-  text-decoration: none;
-}
-
-
-.footer .listItem .icon {
-  color: white;
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-  font-size: 20px
-}
+                        .footer .listItem a {
+                        color: white;
+                        text-decoration: none;
+                        }
 
 
- p {
-  color: white;
-}
+                        .footer .listItem .icon {
+                        color: white;
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 20px;
+                        font-size: 20px
+                        }
 
-@media (min-width:630px){
 
-.footer .listItem {
-  display: block;
-  margin-bottom: 120px;
-}
+                        p {
+                        color: white;
+                        }
 
-}`}
+                        @media (min-width:630px){
+
+                        .footer .listItem {
+                        display: block;
+                        margin-bottom: 120px;
+                        }
+
+                        }`}
                         >
                             <LiveEditor />
                         </LiveProvider>
+                            </div>
+                    
                     </div>
 
 <h1 className="text-white text-3xl font-bold mb-10">

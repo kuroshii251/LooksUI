@@ -10,7 +10,7 @@ import ElementsPage from "./pages/elements/main.tsx";
 import Card1 from "./pages/elements/card/card1.tsx";
 import Section1 from "./pages/elements/section/section1.tsx";
 import Section2 from "./pages/elements/section/section2.tsx";
-import Section3 from "./pages/elements/section/section2.tsx";
+import Section3 from "./pages/elements/section/section3.tsx";
 import CardList from "./pages/elements/card/main.tsx";
 import Card2 from "./pages/elements/card/card2.tsx";
 import Card3 from "./pages/elements/card/card3.tsx";
@@ -24,6 +24,7 @@ import FormList from "./pages/forms/main.tsx";
 import Form1 from "./pages/forms/form1.tsx";
 import Form2 from "./pages/forms/form2.tsx";
 import Form3 from "./pages/forms/form3.tsx";
+import ContactPage from "./pages/contact/main.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -50,6 +51,8 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/component/button/1" element={<Button1/>}/>
         <Route path="/component/button/2" element={<Button2/>}/>
         <Route path="/component/button/3" element={<Button3/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
+
 
 
 

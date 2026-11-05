@@ -95,10 +95,12 @@ export default function Form2() {
 
     const handleCopyHtml = () => {
         navigator.clipboard.writeText(htmlCode);
+        alert("Copied");
     };
 
     const handleCopyCss = () => {
         navigator.clipboard.writeText(cssCode);
+        alert("Copied");
     };
 
 
@@ -160,7 +162,7 @@ export default function Form2() {
                      <div className={tab === 0 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyCss}
+                                            onClick={handleCopyHtml}
                                             className="cursor-pointer p-3"
                                         >
                                             
@@ -174,7 +176,7 @@ export default function Form2() {
                                          <div className={tab === 1 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyHtml}
+                                            onClick={handleCopyCss}
                                             className="cursor-pointer p-3"
                                         >
                                             <i

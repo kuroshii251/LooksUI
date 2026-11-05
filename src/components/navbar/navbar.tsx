@@ -3,13 +3,17 @@ import logo from "../../assets/logo.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const  [isDropdown, setIsDropdown] = useState(false);
     return (
         <>
-            <nav className="flex items-center justify-between h-30 flex-wrap p-7">
+            <nav className="flex items-center justify-between h-30 flex-wrap p-3">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <a href="/">
-                    <img src={logo} width={80} height={80} alt="" />
-                    </a>
+                    <div className="flex items-center">
+                            <img src={logo} height={100} width={100} />
+                            <h1 className="text-3xl text-white font-bold">LooksUI</h1>
+
+                            </div>                    </a>
                 </div>
                 <div className="block lg:hidden">
                     <button
@@ -20,60 +24,60 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div
-                    className={`${isOpen ? "block" : "hidden"} w-full lg:flex lg:items-center lg:w-auto`}
+                    className={`${isOpen ? "block" : "hidden"} w-full z-index-10 lg:flex bg-black lg:items-center bg-black z-10 lg:w-auto`}
                 >
-                    <div className="text-md lg:flex-grow lg:flex lg:items-center lg:space-x-5">
+                    <div className="text-md  lg:flex-grow lg:flex lg:items-center lg:space-x-5">
                           <a
                             href="/"
-                            className="block text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
+                            className="block font-semibold text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
                         >
                             Home
                         </a>
                         <a
                             href="/blog"
-                            className="block text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
+                            className="block font-semibold text-white mt-4 hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start w-full rounded-xl lg:inline-block lg:mt-0 text-black"
                         >
                             Blog
                         </a>
                         <div className="col relative group">
-                            <a
-                                className="flex justify-center items-center text-white hover:bg-gray-800 p-3 lg:w-20 w-full lg:text-center text-start rounded-xl lg:mt-0 text-black "
+                            <button onClick={() => setIsDropdown(!isDropdown)}
+                                className="flex lg:justify-center font-semibold items-center text-white hover:bg-gray-800 p-3 lg:w-full w-full lg:text-center text-start rounded-xl lg:mt-0 text-black "
                             >
                                 Component
-                                <i className="fa-solid ml-1 fa-caret-down text-white"></i>
-                            </a>
+                                <i className="fa-solid ml-3  fa-caret-down text-white"></i>
+                            </button>
 
-                            <div className="hidden   absolute bg-zinc-950 rounded-xl w-auto h-100 p-10 flex justify-start right-0 overflow-hidden z-10">
+                            <div className={`${isDropdown ? "block" : "hidden" } lg:absolute lg:bg-zinc-950 rounded-xl w-60 lg:h-75 lg:p-5 p-0 flex justify-start right-0 overflow-hidden z-10`}>
                                 <div className="h-50">
-                                    <ul className="space-y-5 w-50 space-x-3">
-                                        <li className="bg-zinc-800 hover:bg-zinc-900 p-3 rounded-lg">
+                                    <ul className="lg:space-y-5 w-50 space-x-3">
+                                        <li className="lg:bg-zinc-800 lg:hover:bg-zinc-900 p-3 rounded-lg">
                                             <a
-                                                href=""
-                                                className="font-semibold text-white"
+                                                href="/component/section"
+                                                className=" text-white  s"
                                             >
                                                 Section Component
                                             </a>
                                         </li>
-                                        <li className=" rounded-lg hover:bg-zinc-900 p-3 bg-zinc-800 ">
+                                        <li className="lg:bg-zinc-800 lg:hover:bg-zinc-900 p-3 rounded-lg">
                                             <a
-                                                href=""
-                                                className="text-white font-semibold"
+                                                href="/component/button"
+                                                className=" text-white"
                                             >
                                                 Button
                                             </a>
                                         </li>
-                                        <li className="bg-zinc-800 hover:bg-zinc-900 p-3 rounded-lg">
+                                        <li className="lg:bg-zinc-800 lg:hover:bg-zinc-900 p-3 rounded-lg">
                                             <a
-                                                href=""
-                                                className="font-semibold text-white"
+                                                href="/component/card"
+                                                className=" text-white"
                                             >
                                                 Card
                                             </a>
                                         </li>
-                                         <li className="bg-zinc-800 hover:bg-zinc-900 p-3 rounded-lg">
+                                        <li className="lg:bg-zinc-800 lg:hover:bg-zinc-900 p-3 rounded-lg">
                                             <a
-                                                href=""
-                                                className="font-semibold text-white"
+                                                href="/component/forms"
+                                                className=" text-white"
                                             >
                                                Forms
                                             </a>
@@ -86,7 +90,7 @@ export default function Navbar() {
 
                         <a
                             href="/contact"
-                            className="block hover:bg-gray-800 hover:bg-gray-800 lg:w-20 lg:text-center text-start w-100 p-3 rounded-xl text-white mt-4 lg:inline-block lg:mt-0 text-white"
+                            className="block hover:bg-gray-800 font-semibold hover:bg-gray-800 lg:w-20 lg:text-center text-start w-100 p-3 rounded-xl text-white mt-0 lg:inline-block lg:mt-0 text-white"
                         >
                             Contact
                         </a>

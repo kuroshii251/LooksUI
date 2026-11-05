@@ -17,7 +17,7 @@ export default function ButtonList() {
             <a href="/component/forms" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Forms</a>
 
           </div>
-          <div className="grid grid-cols-3 pt-5 space-x-5 space-y-10">
+          <div className="grid lg:grid-cols-3 place-items-center mx-auto grid-cols-1 pt-5 space-x-5 space-y-10">
                    <a href="/component/button/1" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
@@ -101,7 +101,7 @@ export default function ButtonList() {
               </LiveProvider>
             </a>
           
-            <a href="/component/button/3" className="col bg-zinc-950 h-106  rounded-xl p-3 w-100">
+            <a href="/component/button/3" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`
                                 <>
@@ -123,7 +123,6 @@ export default function ButtonList() {
             padding: 20px 40px;
             text-decoration: none;
             color: white;
-
         }
 
           .button3 a:hover {

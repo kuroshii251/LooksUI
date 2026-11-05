@@ -8,11 +8,10 @@ export default function Card2() {
     const htmlCode = `
 
    <div class="bg-container">
-
     <div class="background-code">
- <span class="circle1"/>
-  <span class="circle2"/>
- <span class="circle3"/>
+ <span class="circle1"/></span>
+  <span class="circle2"/></span>
+ <span class="circle3"></span>
 
 
  </div> 
@@ -49,18 +48,16 @@ export default function Card2() {
      }
  
      .circle2 {
+    background-color:yellow;
      width:10px;
      height:10px;
      border-radius: 50%;
-     background-color:yellow;
      }
  
      .circle3 {
     background-color:green;
- 
      width:10px;
      height:10px;
- 
      border-radius: 50%;
      
      }
@@ -73,10 +70,12 @@ export default function Card2() {
 
     const handleCopyHtml = () => {
         navigator.clipboard.writeText(htmlCode);
+        alert("Copied");
     };
 
     const handleCopyCss = () => {
         navigator.clipboard.writeText(cssCode);
+        alert("Copied");
     };
 
     return (
@@ -134,7 +133,7 @@ export default function Card2() {
                      <div className={tab === 0 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyCss}
+                                            onClick={handleCopyHtml}
                                             className="cursor-pointer p-3"
                                         >
                                             
@@ -148,7 +147,7 @@ export default function Card2() {
                                          <div className={tab === 1 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyHtml}
+                                            onClick={handleCopyCss}
                                             className="cursor-pointer p-3"
                                         >
                                             <i

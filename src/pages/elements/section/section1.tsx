@@ -5,175 +5,193 @@ import Footer from "../../../components/footer/footer";
 
 export default function Section1() {
     const [tab, setTab] = useState(0);
-      const htmlCode = `
-       <nav class="navbarr">
-        <div class="name-website">
-            John Doe
+       const htmlCode = `          
+  
+      <nav className="navbar">
+        <div className="logo">
+            <h1>John Doe</h1>
         </div>
-        <div class="list-navbars">
-<ul>
+        <div>
+            <ul id="navbarss">
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#aboutme">About Me</a>
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#project">Project</a>
+                    <a href="#">Contact </a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a> 
+                    <div className="hamburgers" id="hamburgerMenu">
+                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 6.5H19V8H5V6.5Z" fill="#fff"/>
+<path d="M5 16.5H19V18H5V16.5Z" fill="#fff"/>
+<path d="M5 11.5H19V13H5V11.5Z" fill="#fff"/>
+</svg>
+         </div>
                 </li>
-                <li>
-            <div class="hamburger" id="hamburgerss">
-            <i class="fa-solid fa-bars menuu"></i>
-                        <i class="fa-solid fa-x closes"></i>
 
-            
-        </div>
-                </li>
             </ul>
-           
         </div>
-      
-      
     </nav>
-       <div class="nav-hamburger-lists" id="nav-hambuger">
-            <a href="#home">Home</a>
-              <a href="#aboutme">About Me</a>
 
-            <a href="#project">Project</a>         
+    <div className="hamburgerMenuList" id="hamburger-nav-list">
+        <div class="" style={{marginBottom: "20p", marginTop: "20px"}}>
+            <a href="#">Home</a>
 
-               <a href="#contact">Contact</a>
         </div>
+        <div class="" style={{marginBottom: "20p", marginTop: "20px"}}>
+            <a href="#">About</a>
+
+        </div>
+
+        <div class="" style={{marginBottom: "20p", marginTop: "20px"}}>
+            <a href="#">Contact</a>
+
+        </div>
+    </div>
  `
 
-    const cssCode = `
-        .navbarr {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            background-color: green;
-            align-items: center;
-            width: 550px;
-            color: white;
-            margin: 0 auto;
-            margin-top: px;
-            border-radius: 50px;
-        }
+       const cssCode = `
+
+    .navbar {
+    padding: 3px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 20px;
+}
 
 
-        .navbarr .name-website {
-            font-weight: 600;
-            padding: 20;
-            font-size: 15px;
-            color: white;
-            margin-right: 20px;
-        }
 
-        .navbarr ul {
-            list-style: none;
-            display: flex;
-            gap: 5px;
-        }
+.navbar .logo {
+        font-weight: 600;
+        color: white;
+        padding: 20px;
+        padding-left: 20px;
+        font-size: 15px;
+}
 
-        .navbarr  ul li {
-            padding: 20;
-        }
+.navbar .logo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
 
-       .navbarr  ul li a {
-            text-decoration: none;
-            font-size: 17px;
-            padding: 15px;
-            border-radius: 10px;
-            font-weight: 400;
-            font-family: "Poppins", sans-serif;
-        }
+ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
 
-        .navbarr ul li a:hover {
-            background-color: black;
-            color: white;
-        }
+ul li {
+    padding: 20px;
+}
 
-        .nav-hamburger-lists {
-            display: none;
-        }
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
 
-
-        .hamburger {
-            display: none;
-        }
-
-        @media(max-width:768px) {
-
-            .navbarr  {
-                width: 450px;
-                margin-top: 5px;
-                display: flex;
-                margin-bottom: -40px;
-            }
-
-            .nav-hamburger-lists {
-                display: none;
-            }
-
-            .nav-hamburger-lists a {
-                text-decoration: none;
-                color: white;
-                padding: 10px;
-
-                font-family: "Poppins", sans-serif;
-
-            }
-
-            .nav-hamburger-lists a:hover {
-                border-radius: 10px;
-                background-color: rgb(124, 32, 32);
-
-            }
-
-            .nav-hamburger-lists .active {
-                display: block;
-                background-color: brown;
-                padding: 20px 30px;
-                width: 408px;
-                height: 30vh;
-                justify-content: center;
-                justify-items: center;
-                align-items: center;
-                margin: 0 auto;
-            }
+ul li a:hover {
+    background-color: rgb(43, 43, 43);
+}
 
 
-            .hamburger {
-                display: flex;
-                cursor: pointer;
-                color: white;
-                font-size: 25px;
-                padding: 20px;
-            }
+.hamburgerMenuList {
+    display: none;
+}
 
-            .hambuger .menuss {
-                display: none;
-            }
 
-            .hambuger.active .menuss {
-                display: block;
-            }
+.hamburgers {
+    display: none;
+}
 
-            .navbarr  ul li a {
-                display: none;
-            }
-        }
- `
+
+@media(max-width:768px) {
+
+    .navbar {
+        width: 450px;
+        margin-top: 5px;
+        display: flex;
+        margin-bottom: -40px;
+    }
+
+    .hamburgerMenuList {
+        display: none;
+    }
+
+    .hamburgerMenuList a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    .hamburgerMenuList a:hover {
+        border-radius: 10px;
+        background-color: rgb(40, 40, 40);
+
+    }
+
+    .hamburgerMenuList.active {
+        display: block;
+        background-color: black;
+        padding: 20px 30px;
+        width: 408px;
+        height: 30vh;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    .hamburgers {
+        display: flex;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    .hambugrers .menuss {
+        display: none;
+    }
+
+    .hamburgers.active .menuss {
+        display: block;
+    }
+
+
+    .navbar ul li a {
+        display: none;
+    }
+}
+        
+       
+       `
 
  const jscode =`
-    const hamburgerBar = document.getElementById("hamburgerss");
-const navbarList = document.getElementById("nav-hambuger");
+      const hamburgerBar = document.getElementById("hamburgerMenu");
+const navv = document.getElementById("hamburger-nav-list");
+
 hamburgerBar.addEventListener("click", () => {
-    navbarList.classList.toggle("active");
+    navv.classList.toggle("active");
     hamburgerBar.classList.toggle("active");
-})`;
+})
+    `;
 
     const handleTab = (id: any) => {
         setTab(id);
@@ -181,15 +199,19 @@ hamburgerBar.addEventListener("click", () => {
 
     const handleCopyHtml = () => {
         navigator.clipboard.writeText(htmlCode);
+        alert("Copied");
     };
 
     const handleCopyCss = () => {
         navigator.clipboard.writeText(cssCode);
+        alert("Copied");
+
     };
 
 
     const handleCopyjs = () => {
         navigator.clipboard.writeText(jscode);
+        alert("Copied");
     }
 
     return (
@@ -199,7 +221,7 @@ hamburgerBar.addEventListener("click", () => {
                 <div className="col overflow-y-auto p-4 flex-1 ">
 
                     <div className="col block space-y-5">
-                      
+
 
                         <div className="col bg-zinc-800 p-5 h-100 rounded-xl">
                             <LiveProvider
@@ -263,7 +285,7 @@ ${htmlCode}
                      <div className={tab === 0 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyCss}
+                                            onClick={handleCopyHtml}
                                             className="cursor-pointer p-3"
                                         >
                                             
@@ -277,7 +299,7 @@ ${htmlCode}
                                          <div className={tab === 1 ? "block": "hidden"}>
 
                                         <button
-                                            onClick={handleCopyHtml}
+                                            onClick={handleCopyCss}
                                             className="cursor-pointer p-3"
                                         >
                                             <i

@@ -17,7 +17,7 @@ export default function ElementsPage() {
             <a href="/component/forms" className="bg-zinc-800 text-white w-30 rounded-xl text-center font-semibold p-3">Forms</a>
 
           </div>
-          <div className="grid grid-cols-3 pt-5 space-x-5 space-y-10">
+          <div className="grid lg:grid-cols-3 place-items-center mx-auto grid-cols-1 pt-5 space-x-5 space-y-10">
             <a href="/component/section/3" className="col bg-zinc-950  rounded-xl p-3 w-100">
               <LiveProvider
                 code={`

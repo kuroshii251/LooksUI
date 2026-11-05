@@ -3,37 +3,30 @@ export default function Footer() {
     return (
         <>
             <div className="col pt-10">
-                <div className="col bg-zinc-950 lg:h-120 p-3 w-full">
-                    <div className="lg:flex block space-between space-x-10 p-7 py-20 justify-start items-center">
-                        <div className="col-md-6 w-1/2">
+                <div className="col bg-zinc-950 lg:h-auto p-3 w-full">
+                    <div className="lg:flex block lg:space-between space-x-10 p-7 py-20 justify-start ">
+                        <div className="col ">
+                            <div className="flex items-center">
                             <img src={logo} height={100} width={100} />
-                            <p className="text-white w-100">
-                                LooksUI is a website where users can search the
-                                best UI component for their website
-                            </p>
-                            <div className="mt-5">
-                                <a
-                                    href="https://github.com/kuroshii251"
-                                    className="bg-white p-1 mt-10 rounded-full"
-                                >
-                                    <i className="fa-brands fa-github text-xl"></i>
-                                </a>
+                            <h1 className="text-3xl text-white font-bold">LooksUI</h1>
+
                             </div>
+                            <p className="text-white text-lg w-100">
+                               LooksUI is a website that provides UI assets/components for your website. It's ready to use elements such as buttons, form, section, and card 
+                            </p>
+                       
                         </div>
 
-                        <div className="col flex items-center justify-center align-items-center space-x-30 lg:w-1/2 lg:mt-0 mt-10 ml-auto">
+                        <div className="col lg:flex space-y-10 justify-center align-items-center space-x-30 lg:w-1/2 lg:mt-0 mt-10 ml-auto">
                             <div className="col-md-12">
-                                <ul className="col space-y-3 ">
-                                    <li>
-                                        <h1 className="text-white font-semibold">
+                                <ul className="col space-y-5 ">
+                                    <p className="text-white font-bold">Menu</p>
+                                    <li className="mt-5">
+                                 <a href="/" className="text-white">
                                             Home
-                                        </h1>
+                                        </a>
                                     </li>
-                                    <li>
-                                        <h1 className="text-white font-semibold">
-                                            Menu
-                                        </h1>
-                                    </li>
+                                      
                                     <li>
                                         <a href="/blog" className="text-white">
                                             Blog
@@ -44,7 +37,7 @@ export default function Footer() {
                                             href="/element"
                                             className="text-white"
                                         >
-                                            Elements
+                                            Component
                                         </a>
                                     </li>
                                     <li>
@@ -58,17 +51,11 @@ export default function Footer() {
                                 </ul>
                             </div>
                             <ul className="col space-y-3">
+                                <p className="text-white font-bold">Component</p>
+                               
                                 <li>
                                     <a
-                                        href=""
-                                        className="text-white font-semibold text-decoration-none"
-                                    >
-                                        Elements
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/elements/section"
+                                        href="/component/section"
                                         className="text-white text-decoration-none"
                                     >
                                         Section
@@ -76,7 +63,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href="/elements/button"
+                                        href="/component/button"
                                         className="text-white text-decoration-none"
                                     >
                                         Button
@@ -84,14 +71,25 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href="/elements/card"
+                                        href="/component/card"
                                         className="text-white text-decoration-none"
                                     >
                                         Card
                                     </a>
                                 </li>
+                                 <li>
+                                    <a
+                                        href="/component/forms"
+                                        className="text-white text-decoration-none"
+                                    >
+                                        Form
+                                    </a>
+                                </li>
                             </ul>
                         </div>
+                    </div>
+                    <div className="p-2">
+                        <h1 className="text-white font-semibold p-5">Copyrigt © 2026 LooksUI All Rights Reserved.</h1>
                     </div>
                 </div>
             </div>
