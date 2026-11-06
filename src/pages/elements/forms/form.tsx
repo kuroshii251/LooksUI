@@ -1,7 +1,7 @@
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
-import Navbar from "../../components/navbar/navbar";
+import Navbar from "../../../components/navbar/navbar";
 import { useState } from "react";
-import Footer from "../../components/footer/footer";
+import Footer from "../../../components/footer/footer";
 
 export default function Form2() {
     const [tab, setTab] = useState(0);

@@ -20,10 +20,9 @@ import Button3 from "./pages/elements/button/button3.tsx";
 import Button2 from "./pages/elements/button/button2.tsx";
 import Button1 from "./pages/elements/button/button1.tsx";
 import ButtonList from "./pages/elements/button/main.tsx";
-import FormList from "./pages/forms/main.tsx";
-import Form1 from "./pages/forms/form1.tsx";
-import Form2 from "./pages/forms/form2.tsx";
-import Form3 from "./pages/forms/form3.tsx";
+import FormList from "./pages/elements/forms/main.tsx";
+import Form from "./pages/elements/forms/form.tsx";
+import Form2 from "./pages/elements/forms/forms2.tsx";
 import ContactPage from "./pages/contact/main.tsx";
 
 createRoot(document.getElementById("root")!).render(
@@ -44,9 +43,8 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/component/section/2" element={<Section2/>}/>
         <Route path="/component/section/3" element={<Section3/>}/>
         <Route path="/component/forms" element={<FormList/>}/>
-        <Route path="/component/forms/1" element={<Form1/>}/>
+        <Route path="/component/forms/1" element={<Form/>}/>
         <Route path="/component/forms/2" element={<Form2/>}/>
-        <Route path="/component/forms/3" element={<Form3/>}/>
         <Route path="/component/button" element={<ButtonList/>}/>
         <Route path="/component/button/1" element={<Button1/>}/>
         <Route path="/component/button/2" element={<Button2/>}/>

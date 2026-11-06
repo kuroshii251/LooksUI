@@ -246,7 +246,7 @@ Reject All
   
 <div className="contentCard">
 <div className="imagess">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fRdoJJaUmtMA-hNWEzIPNwCOSx65ek1eLygoCTzYlg&s=10" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtIqvFm1SgSbf1amd8wqh3NloxjA3QbY6vrjUWgr5Fsg&s=10" />
 <div className="text">
 <h1>Card</h1>
  <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
