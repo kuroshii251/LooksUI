@@ -10,7 +10,7 @@ export default function Form3() {
         <h1 class="sora">CONTACT</h1>
         <p style="color: #000000; margin-top: 0;">If you have any questions, contact me by fill this form
         </p>
-        <form action=" https://formspree.io/f/mvkkaean" method="POST" class="formss">
+        <form action="" method="POST" class="formss">
             <div class="">
                 <h2>Email</h2>
                 <input type="text" name="email" style="margin-bottom: 20px;" placeholder="Email...">
