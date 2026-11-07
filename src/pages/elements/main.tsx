@@ -1073,7 +1073,7 @@ Reject All
         <p style={{color: "#000000", marginTop: 0}}>
         If you have any questions, contact me by fill this form
         </p>
-        <form action=" https://formspree.io/f/mvkkaean" method="POST" className="formss">
+        <form action="" method="POST" className="formss">
             <div className="">
                 <h2>Email</h2>
                 <input type="text" name="email" style={{marginBottom: "20px"}} placeholder="Email..."/>
