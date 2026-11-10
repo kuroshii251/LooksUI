@@ -62,4 +62,4 @@ npm run dev
 ```
 
 Or if you would like to see the website demo, you can check on this website:
-https://looks-ui.vercel.app/
+https://looks-ui-projects.vercel.app
