@@ -395,7 +395,10 @@ hamburgerBar.addEventListener("click", () => {
         </div>
       </div>
 
-      <Footer/>
+<div className="">
+    <Footer/>
+</div>
+
     </>
   );
 }
