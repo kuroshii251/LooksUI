@@ -82,17 +82,17 @@ export default function Section1() {
   font-weight: 700;
 }
 
-ul {
+.navbar ul {
     list-style: none;
     display: flex;
     gap: 5px;
 }
 
-ul li {
+.navbar ul li {
     padding: 20px;
 }
 
-ul li a {
+.navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 17px;
@@ -102,7 +102,7 @@ ul li a {
     font-family: "Poppins", sans-serif;
 }
 
-ul li a:hover {
+.navbar ul li a:hover {
     background-color: rgb(43, 43, 43);
 }
 
@@ -357,10 +357,7 @@ ${htmlCode}
                                     </div>
                                 </div>
 
-                                
-
-
-
+            
                             </div>
                         </div>
                     </div>
